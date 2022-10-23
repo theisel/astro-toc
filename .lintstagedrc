@@ -1,0 +1,5 @@
+{
+  "*.{astro,js,mjs,ts}": [
+    "pnpm format"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "check-component": "astro --root packages/astro-toc check",
+    "format": "prettier -w **/*.{astro,js,mjs,ts}",
+    "launch-demo": "pnpm --filter demo dev",
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astro",
+    "withastro",
+    "astro-component",
+    "typescript",
+    "ui"
+  ],
+  "author": "Tom Theisel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theisel/astro-toc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theisel/astro-toc/issues"
+  },
+  "homepage": "https://github.com/theisel/astro-toc#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.25.0",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.6.0"
+  },
+  "dependencies": {
+    "astro": "^1.5.2"
+  }
+}

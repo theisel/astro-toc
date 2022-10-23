@@ -1,0 +1,21 @@
+---
+import type { TOC } from "astro-toc";
+
+export interface Props {
+  title: string;
+  url?: string;
+}
+
+const { title, url, depth, ...attrs } = Astro.props;
+---
+
+<div {...attrs} data-cmp="card">
+  <h4>{url ? <a href={url}>{title}</a> : title}</h4>
+</div>
+
+<style>
+  div {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+</style>

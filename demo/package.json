@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "description": "Demo for the `astro-toc` component",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro-toc": "workspace:*"
+  }
+}

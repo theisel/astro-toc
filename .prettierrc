@@ -1,0 +1,23 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "plugins": ["./node_modules/prettier-plugin-astro"],
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    },
+    {
+      "files": ["**/*.yml", "**/*.yaml"],
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
+}

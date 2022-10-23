@@ -1,0 +1,70 @@
+---
+import { TOC } from "astro-toc";
+import Card from "../components/Card.astro";
+
+const toc = [
+  { depth: 1, title: "Tours" },
+  { depth: 2, title: "Walking Tours" },
+  { depth: 3, title: "City Walking Tours" },
+  { depth: 3, title: "River Walking Tours" },
+  { depth: 2, title: "Boat Tours" },
+  { depth: 1, title: "Restaurants" },
+  { depth: 2, title: "Fine Dining" },
+  { depth: 2, title: "Gastropub" },
+  { depth: 2, title: "Fast Food" },
+  { depth: 1, title: "Hotels" },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Demo of `astro-toc` component</h1>
+    <hr />
+    <h2>Unordered (style="bullet")</h2>
+    <TOC toc={toc} />
+    <hr />
+    <h2>Ordered (style="number")</h2>
+    <TOC toc={toc} style="number" />
+    <hr />
+    <h2>Menu (style="menu")</h2>
+    <TOC toc={toc} style="menu" />
+    <hr />
+    <h2>Custom Component (use={"{MyComponent}"})</h2>
+    <div data-toc-card>
+      <TOC toc={toc} use={Card} />
+    </div>
+    <hr />
+    <h2>Max Depth (maxDepth="1")</h2>
+    <TOC toc={toc} maxDepth="1" />
+    <style is:global>
+      * {
+        box-sizing: border-box;
+      }
+      [data-toc-card] menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      [data-toc-card] [data-astro-toc="1"] > [data-cmp="card"] {
+        background-color: #ddd;
+      }
+      ol {
+        counter-reset: item;
+      }
+      ol li {
+        display: block;
+      }
+      ol li:before {
+        content: counters(item, ".") " ";
+        counter-increment: item;
+      }
+    </style>
+  </body>
+</html>

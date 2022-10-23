@@ -1,0 +1,33 @@
+{
+  "name": "astro-toc",
+  "description": "Table of Contents (ToC) generator for Astro. Use custom components for interactivity.",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astro",
+    "withastro",
+    "astro-component",
+    "typescript",
+    "ui"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": "Tom Theisel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theisel/astro-toc.git",
+    "directory": "packages/astro-toc"
+  },
+  "bugs": {
+    "url": "https://github.com/theisel/astro-toc/issues"
+  },
+  "homepage": "https://github.com/theisel/astro-toc#readme"
+}

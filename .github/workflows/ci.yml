@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    paths-ignore:
+      - '**/*.md'
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  check:
+    name: Check Component
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2.2.2
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Run Check
+        run: pnpm check-component
+
+  dispatch_release:
+    name: Dispatch Release
+    needs: [check]
+    if: github.event_name == 'push'
+    uses: ./.github/workflows/release.yml
+    secrets: inherit
+    with:
+      ref: ${{ github.ref }}
