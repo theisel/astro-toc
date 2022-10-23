@@ -1,7 +1,7 @@
 {
   "name": "astro-toc",
   "description": "Table of Contents (ToC) generator for Astro. Use custom components for interactivity.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "exports": {
     ".": "./lib/index.js"
