@@ -21,9 +21,9 @@ npm install astro-toc
 
 ## Usage
 
-### Classic `default`
+### Classic
 
-This is render mode can render your `toc` as `<ul>`, `<ol>` or `<menu>`; set the `style` property to select your flavour.
+This render mode can render your `toc` as `<ul>`, `<ol>` or `<menu>`; set the `style` property to select your flavour.
 
 | Property            | Type                                                              | Description                                                                                                                                                                                                                |
 | :------------------ | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
