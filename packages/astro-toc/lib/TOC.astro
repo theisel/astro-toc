@@ -42,7 +42,7 @@ const Tag = Cmp ?? "menu" === style ? "menu" : "number" === style ? "ol" : "ul";
 
       return (
         <li data-astro-toc={depth}>
-          {Cmp ? <Cmp {...it} class={astroClass} /> : it.title}
+          {Cmp ? <Cmp {...it} class={astroClass} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
           {shouldRenderSubHeadings ? <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} /> : null}
         </li>
       );
