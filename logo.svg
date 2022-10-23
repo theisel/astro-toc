@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="169.33mm" height="169.33mm" version="1.1" viewBox="0 0 169.33 169.33" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="paint0_linear-1" x1="144.6" x2="95.791" y1="5.423" y2="173.38" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#000014" offset="0"/>
+   <stop stop-color="#150426" offset="1"/>
+  </linearGradient>
+  <linearGradient id="paint1_linear-3" x1="168.34" x2="126.06" y1="130.49" y2="218.98" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#FF1639" offset="0"/>
+   <stop stop-color="#FF1639" stop-opacity="0" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-21.116 -50.499)">
+  <g transform="translate(-14.08 -23.356)">
+   <rect x="35.196" y="73.855" width="169.33" height="169.33" fill="#f3f3f3" stroke-width="10.042" style="paint-order:stroke fill markers"/>
+  </g>
+  <g transform="matrix(.26682 0 0 .26682 38.986 99.956)" clip-rule="evenodd" fill-rule="evenodd">
+   <path d="m131.01 18.929c1.944 2.413 2.935 5.67 4.917 12.181l43.309 142.27a180.28 180.28 0 0 0-51.778-17.53l-28.198-95.29a3.67 3.67 0 0 0-7.042 0.01l-27.857 95.232a180.22 180.22 0 0 0-52.01 17.557l43.52-142.28c1.99-6.502 2.983-9.752 4.927-12.16a15.999 15.999 0 0 1 6.484-4.798c2.872-1.154 6.271-1.154 13.07-1.154h31.085c6.807 0 10.211 0 13.086 1.157a16.004 16.004 0 0 1 6.487 4.806z" fill="url(#paint0_linear-1)" stroke-width="1.0406"/>
+   <path d="m136.19 180.15c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.35-11.349 10.742 0 10.73 9.373 10.72 16.977v0.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 0 1-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 0 0 3.743-14.82c0-3.299-0.513-6.479-1.463-9.463z" fill="#ff5d01" stroke-width=".37166"/>
+   <path d="m136.19 180.15c-7.139 6.105-21.39 10.268-37.804 10.268-20.147 0-37.033-6.272-41.513-14.707-1.602 4.835-1.961 10.367-1.961 13.902 0 0-1.056 17.355 11.015 29.426 0-6.268 5.081-11.349 11.35-11.349 10.742 0 10.73 9.373 10.72 16.977v0.679c0 11.542 7.054 21.436 17.086 25.606a23.27 23.27 0 0 1-2.339-10.2c0-11.008 6.463-15.107 13.974-19.87 5.976-3.79 12.616-8.001 17.192-16.449a31.024 31.024 0 0 0 3.743-14.82c0-3.299-0.513-6.479-1.463-9.463z" fill="url(#paint1_linear-3)" stroke-width="1.0406"/>
+  </g>
+  <g fill="#050118" stroke-width="10.042">
+   <rect x="121.14" y="153.61" width="48.138" height="8.0113" rx="3.175" ry="3.175" style="paint-order:stroke fill markers"/>
+   <circle cx="109.79" cy="157.62" r="4.0056" style="paint-order:stroke fill markers"/>
+   <rect x="121.14" y="138.64" width="48.138" height="8.0113" rx="3.175" ry="3.175" style="paint-order:stroke fill markers"/>
+   <circle cx="109.79" cy="142.65" r="4.0056" style="paint-order:stroke fill markers"/>
+   <rect x="121.14" y="123.68" width="48.138" height="8.0113" rx="3.175" ry="3.175" style="paint-order:stroke fill markers"/>
+   <circle cx="109.79" cy="127.68" r="4.0056" style="paint-order:stroke fill markers"/>
+   <circle cx="109.79" cy="112.71" r="4.0056" style="paint-order:stroke fill markers"/>
+   <rect x="121.14" y="108.71" width="48.138" height="8.0113" rx="3.175" ry="3.175" style="paint-order:stroke fill markers"/>
+  </g>
+ </g>
+</svg>
