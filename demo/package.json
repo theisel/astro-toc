@@ -4,6 +4,17 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "author": "Tom Theisel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theisel/astro-toc.git",
+    "directory": "demo"
+  },
+  "bugs": {
+    "url": "https://github.com/theisel/astro-toc/issues"
+  },
+  "homepage": "https://github.com/theisel/astro-toc#readme",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
