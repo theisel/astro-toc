@@ -13,7 +13,6 @@
     "astro",
     "withastro",
     "astro-component",
-    "typescript",
     "ui"
   ],
   "files": [

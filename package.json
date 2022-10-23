@@ -15,7 +15,6 @@
     "astro",
     "withastro",
     "astro-component",
-    "typescript",
     "ui"
   ],
   "author": "Tom Theisel",
