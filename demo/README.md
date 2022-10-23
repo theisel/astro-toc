@@ -1,9 +1,15 @@
+<div>
+  <img src="https://raw.githubusercontent.com/theisel/astro-toc/main/logo.svg" width="240" alt="astro-toc logo">
+</div>
+
 # astro-toc
 
 ![license](https://img.shields.io/npm/l/astro-toc?style=flat-square)
 [![npm](https://img.shields.io/npm/v/astro-toc?style=flat-square)](https://www.npmjs.com/package/astro-toc)
 
-This simple demo shows how this [Astro](https://astro.build) component can be used. Go to the `src` directory to get a better insight.
+Table of Contents (ToC) generator for [Astro](https://astro.build/).
+
+This simple demo shows how this `component` can be used. Go to the `src` directory to get a better insight.
 
 ```
 npm install astro-toc
