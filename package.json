@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/theisel/astro-toc#readme",
   "devDependencies": {
+    "astro": "^1.5.2",
     "@changesets/cli": "^2.25.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
@@ -37,7 +38,9 @@
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.6.0"
   },
-  "dependencies": {
-    "astro": "^1.5.2"
-  }
+  "engines": {
+    "node": "^14.15.0 || >=16.0.0",
+    "pnpm": ">=7.14.0"
+  },
+  "packageManager": "pnpm@7.14.0"
 }
