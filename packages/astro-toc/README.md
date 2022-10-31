@@ -27,13 +27,13 @@ npm install astro-toc
 
 ### Classic
 
-This render mode can render your `toc` as `<ul>`, `<ol>` or `<menu>`; set the `style` property to select your flavour.
+This render mode can render your `ToC` as `<ul>`, `<ol>` or `<menu>`; set the `as` property to select your flavour.
 
 | Property            | Type                                                              | Description                                                                                                                                                                                                                |
 | :------------------ | :---------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | toc                 | `{ depth: number; title: string; url?: string; [string]: any }[]` | `depth` and `title` are required.                                                                                                                                                                                          |
-| style `optional`    | `string`                                                          | [bullet](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) \| [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol) \| [menu](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu) |
-| maxDepth `optional` | `number` \| `string`                                              | How many levels should be rendered                                                                                                                                                                                         |
+| as `optional`       | `string`                                                          | [bullet](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) \| [number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol) \| [menu](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu) |
+| maxDepth `optional` | `number`                                                          | How many levels should be rendered                                                                                                                                                                                         |
 
 ```ts
 ---

@@ -27,14 +27,14 @@ const toc = [
   <body>
     <h1>Demo of `astro-toc` component</h1>
     <hr />
-    <h2>Unordered (style="bullet")</h2>
+    <h2>Unordered (as="bullet" /* default */)</h2>
     <TOC toc={toc} />
     <hr />
-    <h2>Ordered (style="number")</h2>
-    <TOC toc={toc} style="number" />
+    <h2>Ordered (as="number")</h2>
+    <TOC toc={toc} as="number" />
     <hr />
-    <h2>Menu (style="menu")</h2>
-    <TOC toc={toc} style="menu" />
+    <h2>Menu (as="menu")</h2>
+    <TOC toc={toc} as="menu" />
     <hr />
     <h2>Custom Component (use={"{MyComponent}"})</h2>
     <div data-toc-card>

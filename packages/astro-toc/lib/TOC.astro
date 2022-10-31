@@ -6,7 +6,7 @@ interface ToC {
 
 interface BaseProps<T> {
   toc: (T & ToC)[];
-  style?: "bullet" | "number" | "menu";
+  as?: "bullet" | "number" | "menu";
   maxDepth?: number | string;
 }
 
@@ -25,11 +25,12 @@ interface UseComponentProps
 export type Props = ClassicProps | UseComponentProps;
 
 const { toc, depth = 1, ...props } = Astro.props;
-const { style = "bullet", use: Cmp, class: astroClass } = props;
+const { use: Cmp, class: className } = props;
+const as = props.as ?? props.style ?? "bullet";
 const maxDepth = Number(props.maxDepth);
 const hasMaxDepth = Number.isInteger(maxDepth);
 const headings = toc.filter((it) => it.depth === depth);
-const Tag = Cmp ?? "menu" === style ? "menu" : "number" === style ? "ol" : "ul";
+const Tag = Cmp ?? "menu" === as ? "menu" : "number" === as ? "ol" : "ul";
 ---
 
 <Tag data-astro-toc={depth}>
@@ -42,7 +43,7 @@ const Tag = Cmp ?? "menu" === style ? "menu" : "number" === style ? "ol" : "ul";
 
       return (
         <li data-astro-toc={depth}>
-          {Cmp ? <Cmp {...it} class={astroClass} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
+          {Cmp ? <Cmp {...it} class={className} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
           {shouldRenderSubHeadings ? <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} /> : null}
         </li>
       );
