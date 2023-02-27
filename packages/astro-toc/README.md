@@ -50,6 +50,8 @@ const toc = [
   {depth: 2, title: "Gastropub"},
   {depth: 2, title: "Fast Food"},
   {depth: 1, title: "Hotels"},
+  {depth: 2, title: "Spa Hotels"},
+  {depth: 2, title: "Bed & Breakfast"},
 ];
 ---
 
