@@ -37,7 +37,10 @@ const Tag = Cmp ?? "menu" === as ? "menu" : "number" === as ? "ol" : "ul";
   {
     headings.map((it, idx) => {
       const nextHeading = headings[idx + 1];
-      const subHeadings = toc.slice((toc as any).indexOf(it) + 1, (toc as any).indexOf(nextHeading));
+      const subHeadings = toc.slice(
+        (toc as any).indexOf(it) + 1,
+        nextHeading ? (toc as any).indexOf(nextHeading) : undefined
+      );
       const hasSubHeadings = subHeadings.length > 0;
       const shouldRenderSubHeadings = hasMaxDepth ? maxDepth > it.depth : hasSubHeadings;
 
