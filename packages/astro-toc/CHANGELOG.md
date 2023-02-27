@@ -1,5 +1,13 @@
 # astro-toc
 
+## 0.1.3
+
+### Patch Changes
+
+- 91274d4: Fixes #3 Last subheader was skipped during render.
+
+  Thanks @newvicklee for pointing that out.
+
 ## 0.1.2
 
 ### Patch Changes
