@@ -5,7 +5,7 @@
 # astro-toc
 
 ![license](https://img.shields.io/npm/l/astro-toc?style=flat-square)
-[![build](https://img.shields.io/github/workflow/status/theisel/astro-toc/CI?style=flat-square)](https://github.com/theisel/astro-toc/actions)
+[![build](https://img.shields.io/github/actions/workflow/status/theisel/astro-toc/ci.yml?style=flat-square)](https://github.com/theisel/astro-toc/actions)
 [![npm](https://img.shields.io/npm/v/astro-toc?style=flat-square)](https://www.npmjs.com/package/astro-toc)
 
 Table of Contents (ToC) generator for [Astro](https://astro.build).
