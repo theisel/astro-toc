@@ -21,21 +21,21 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theisel/astro-toc.git"
+    "url": "https://github.com/theisel/astro-toc.git"
   },
   "bugs": {
     "url": "https://github.com/theisel/astro-toc/issues"
   },
   "homepage": "https://github.com/theisel/astro-toc#readme",
   "devDependencies": {
-    "astro": "^1.5.2",
-    "@changesets/cli": "^2.25.0",
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.6.0"
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
+    "astro": "^3.3.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   },
   "engines": {
     "node": "^14.15.0 || >=16.0.0",
