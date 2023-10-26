@@ -1,26 +1,21 @@
 ---
-interface ToC {
-  depth: number;
-  [k: string]: any;
-}
-
-interface BaseProps<T> {
-  toc: (T & ToC)[];
+type BaseProps<T> = {
+  toc: (T & {
+    depth: number;
+  })[];
   as?: "bullet" | "number" | "menu";
   maxDepth?: number | string;
-}
+};
 
 type ClassicProps = BaseProps<{
   title: string;
   url?: string;
 }>;
 
-interface UseComponentProps
-  extends BaseProps<{
-    [key: string]: any;
-  }> {
+type UseComponentProps = BaseProps<{
   use: (props: any /* Can we do better than `any`? */) => any;
-}
+  [key: string]: any;
+}>;
 
 export type Props = ClassicProps | UseComponentProps;
 
