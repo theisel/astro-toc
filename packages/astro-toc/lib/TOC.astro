@@ -5,6 +5,7 @@ type BaseProps<T> = {
   })[];
   as?: "bullet" | "number" | "menu";
   maxDepth?: number | string;
+  depth?: number;
   use: (props: any) => any;
 };
 
