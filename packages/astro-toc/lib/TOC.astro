@@ -20,10 +20,9 @@ type UseComponentProps = BaseProps<{
 export type Props = ClassicProps | UseComponentProps;
 
 const { toc, depth = 1, ...props } = Astro.props;
-const { use: Cmp, maxDepth, class: className } = props;
-const as = props.as ?? props.style ?? "bullet";
+const { as = "bullet", use: Cmp, maxDepth, class: className } = props;
 const headings = toc.filter((it) => it.depth === depth);
-const Tag = Cmp ?? "menu" === as ? "menu" : "number" === as ? "ol" : "ul";
+const Tag = "bullet" === as ? "ul" : "number" === as ? "ol" : "menu";
 ---
 
 <Tag data-astro-toc={depth}>
