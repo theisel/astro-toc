@@ -22,7 +22,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theisel/astro-toc.git",
+    "url": "https://github.com/theisel/astro-toc.git",
     "directory": "packages/astro-toc"
   },
   "bugs": {
