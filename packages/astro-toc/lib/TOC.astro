@@ -4,8 +4,8 @@ type BaseProps<T> = {
     depth: number;
   })[];
   as?: "bullet" | "number" | "menu";
-  maxDepth?: number | string;
   depth?: number;
+  maxDepth?: number;
   use: (props: any) => any;
 };
 
