@@ -19,7 +19,7 @@ type UseComponentProps = BaseProps<{
 
 export type Props = ClassicProps | UseComponentProps;
 
-const { toc, depth = 1, ...props } = Astro.props;
+const { toc, depth = 1, ...props } = Astro.props as Props;
 const { as = "bullet", use: Cmp, maxDepth, ...styleProps } = props; /* styleProps; `class` & `data-astro-cid-*` */
 const headings = toc.filter((it) => it.depth === depth);
 const Tag = "bullet" === as ? "ul" : "number" === as ? "ol" : "menu";
@@ -37,8 +37,8 @@ const Tag = "bullet" === as ? "ul" : "number" === as ? "ol" : "menu";
 
       return (
         <li data-astro-toc={depth}>
-          {shouldRenderSubHeadings ? <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} /> : null}
           {Cmp ? <Cmp {...it} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
+          {shouldRenderSubHeadings && <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} />}
         </li>
       );
     })
