@@ -5,6 +5,7 @@ type BaseProps<T> = {
   })[];
   as?: "bullet" | "number" | "menu";
   maxDepth?: number | string;
+  use: (props: any) => any;
 };
 
 type ClassicProps = BaseProps<{
@@ -13,7 +14,6 @@ type ClassicProps = BaseProps<{
 }>;
 
 type UseComponentProps = BaseProps<{
-  use: (props: any /* Can we do better than `any`? */) => any;
   [key: string]: any;
 }>;
 
