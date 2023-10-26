@@ -1,39 +1,32 @@
 ---
-interface ToC {
-  depth: number;
-  [k: string]: any;
-}
-
-interface BaseProps<T> {
-  toc: (T & ToC)[];
+type BaseProps<T> = {
+  toc: (T & {
+    depth: number;
+  })[];
   as?: "bullet" | "number" | "menu";
-  maxDepth?: number | string;
-}
+  depth?: number;
+  maxDepth?: number;
+  use: (props: any) => any;
+};
 
 type ClassicProps = BaseProps<{
   title: string;
   url?: string;
 }>;
 
-interface UseComponentProps
-  extends BaseProps<{
-    [key: string]: any;
-  }> {
-  use: (props: any /* Can we do better than `any`? */) => any;
-}
+type UseComponentProps = BaseProps<{
+  [key: string]: any;
+}>;
 
 export type Props = ClassicProps | UseComponentProps;
 
-const { toc, depth = 1, ...props } = Astro.props;
-const { use: Cmp, class: className } = props;
-const as = props.as ?? props.style ?? "bullet";
-const maxDepth = Number(props.maxDepth);
-const hasMaxDepth = Number.isInteger(maxDepth);
+const { toc, depth = 1, ...props } = Astro.props as Props;
+const { as = "bullet", use: Cmp, maxDepth, ...styleProps } = props; /* styleProps; `class` & `data-astro-cid-*` */
 const headings = toc.filter((it) => it.depth === depth);
-const Tag = Cmp ?? "menu" === as ? "menu" : "number" === as ? "ol" : "ul";
+const Tag = "bullet" === as ? "ul" : "number" === as ? "ol" : "menu";
 ---
 
-<Tag data-astro-toc={depth}>
+<Tag data-astro-toc={depth} {...depth === 1 ? styleProps : {}}>
   {
     headings.map((it, idx) => {
       const nextHeading = headings[idx + 1];
@@ -41,13 +34,12 @@ const Tag = Cmp ?? "menu" === as ? "menu" : "number" === as ? "ol" : "ul";
         (toc as any).indexOf(it) + 1,
         nextHeading ? (toc as any).indexOf(nextHeading) : undefined
       );
-      const hasSubHeadings = subHeadings.length > 0;
-      const shouldRenderSubHeadings = hasMaxDepth ? maxDepth > it.depth : hasSubHeadings;
+      const shouldRenderSubHeadings = maxDepth ? maxDepth > it.depth : subHeadings.length > 0;
 
       return (
         <li data-astro-toc={depth}>
-          {Cmp ? <Cmp {...it} class={className} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
-          {shouldRenderSubHeadings ? <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} /> : null}
+          {Cmp ? <Cmp {...it} /> : it.url ? <a href={it.url}>{it.title}</a> : it.title}
+          {shouldRenderSubHeadings && <Astro.self toc={subHeadings} depth={it.depth + 1} {...props} />}
         </li>
       );
     })
