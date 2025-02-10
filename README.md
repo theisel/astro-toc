@@ -17,3 +17,4 @@ npm install astro-toc
 [Documentation](packages/astro-toc/README.md)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/theisel/astro-toc/tree/main/demo)
+ [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/hhttps://github.com/theisel/astro-toc)
