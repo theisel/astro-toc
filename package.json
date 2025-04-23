@@ -1,6 +1,5 @@
 {
   "name": "root",
-  "version": "0.0.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,14 +7,16 @@
     "format": "prettier -w **/*.{astro,js,mjs,ts}",
     "launch-demo": "pnpm --filter demo dev",
     "lint": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky || true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "astro",
     "withastro",
     "astro-component",
-    "ui"
+    "ui",
+    "toc",
+    "table of contents"
   ],
   "author": "Tom Theisel",
   "license": "ISC",
@@ -28,20 +29,20 @@
   },
   "homepage": "https://github.com/theisel/astro-toc#readme",
   "devDependencies": {
-    "@astrojs/check": "^0.2.1",
-    "@changesets/cli": "^2.26.2",
-    "@commitlint/cli": "^18.0.0",
-    "@commitlint/config-conventional": "^18.0.0",
-    "astro": "^3.3.2",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.0.2",
-    "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.0",
-    "typescript": "^5.2.2"
+    "@astrojs/check": "^0.9.4",
+    "@changesets/cli": "^2.29.2",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "astro": "^5.7.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.8.3"
   },
   "engines": {
-    "node": ">=18.14.1",
-    "pnpm": ">=8.9.2"
+    "node": "^18.17.1 || ^20.3.0 || >=22.0.0",
+    "pnpm": ">=10.9.0"
   },
-  "packageManager": "pnpm@8.9.2"
+  "packageManager": "pnpm@10.9.0"
 }
