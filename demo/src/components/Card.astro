@@ -1,10 +1,7 @@
 ---
-import type { TOC } from "astro-toc";
+import type { TocItem } from "astro-toc";
 
-export interface Props {
-  title: string;
-  url?: string;
-}
+type Props = TocItem;
 
 const { title, url, depth, ...attrs } = Astro.props;
 ---
