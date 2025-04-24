@@ -1,5 +1,5 @@
 /**
- * Represents a single item in a Table of Contents (TOC).
+ * Represents a single item in a Table of Contents (ToC).
  */
 export interface TocItem {
   /**
@@ -17,9 +17,9 @@ export interface TocItem {
 }
 
 /**
- * Props for a component rendering a Table of Contents (TOC).
+ * Props for a component rendering a Table of Contents (ToC).
  *
- * @typeParam T - The shape of items in the TOC array, extending {@link TocItem}.
+ * @typeParam T - The shape of items in the ToC array, extending {@link TocItem}.
  */
 export type TocProps<T extends TocItem = TocItem> = {
   /**
@@ -39,11 +39,11 @@ export type TocProps<T extends TocItem = TocItem> = {
    */
   maxDepth?: number;
   /**
-   *  Array of TOC items to render.
+   *  Array of ToC items to render.
    */
   toc: T[];
   /**
-   * Optional custom render function or component for TOC items.
+   * Optional custom component to render each `ToC` item.
    */
   use?: (item: T) => any;
 };
