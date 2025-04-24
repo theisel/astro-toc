@@ -9,7 +9,7 @@ const headings = toc.filter((it) => it.depth === depth);
 const Tag = "bullet" === as ? "ul" : "number" === as ? "ol" : "menu";
 ---
 
-<Tag data-astro-toc={depth} {...depth === 1 ? attrs : {}}>
+<Tag data-astro-toc={depth} {...attrs}>
   {
     headings.map((it, idx) => {
       const nextHeading = headings[idx + 1];
