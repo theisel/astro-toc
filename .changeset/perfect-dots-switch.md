@@ -2,21 +2,6 @@
 "astro-toc": minor
 ---
 
-## **astro-toc**
-
-**Feat:** Apply passed in scoped styles
-
-```jsx
-<style>
-  .text-large {
-    font-size: 3rem;
-  }
-</style>
-<TOC toc={toc} class="text-large" />
-```
-
----
-
 **Feat:** Use `depth` prop to set initial depth
 
 ```jsx
