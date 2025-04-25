@@ -1,18 +1,26 @@
-<div>
+<div align="center">
   <img src="https://raw.githubusercontent.com/theisel/astro-toc/main/logo.svg" width="240" alt="astro-toc logo">
 </div>
 
-# astro-toc
+<h1 align="center">astro-toc</h1>
 
-![license](https://img.shields.io/npm/l/astro-toc?style=flat-square)
+<div align="center">
+
 [![npm](https://img.shields.io/npm/v/astro-toc?style=flat-square)](https://www.npmjs.com/package/astro-toc)
+![license](https://img.shields.io/npm/l/astro-toc?style=flat-square)
 
-A flexible Table of Contents (ToC) generator for [Astro](https://astro.build/). Perfect for blogs, documentation, or any content-rich Astro page which benefits from in-page navigation.
+A flexible Table of Contents (ToC) generator component for [Astro](https://astro.build/). Perfect for blogs, documentation, or any content-rich page which benefits from in-page navigation.
+
+</div>
+
+&nbsp;
 
 > **Note**: In this documentation:
 >
 > - `TOC` refers to the Astro component (`<TOC />`)
 > - `ToC` refers to the data or concept of a Table of Contents
+
+&nbsp;
 
 ## Table of Contents
 
@@ -27,6 +35,8 @@ A flexible Table of Contents (ToC) generator for [Astro](https://astro.build/). 
   - [TypeScript Types](#typescript-types)
 - [License](#license)
 
+&nbsp;
+
 ## Features
 
 - 🧩 Flexible: Use custom component for enhanced render output
@@ -34,12 +44,16 @@ A flexible Table of Contents (ToC) generator for [Astro](https://astro.build/). 
 - 🗂️ Semantic output: Uses native `ul`, `ol`, or `menu` elements
 - ⚙️ TypeScript friendly
 
+&nbsp;
+
 ## Demo
 
 Try it out on:
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/theisel/astro-toc/tree/main/demo) 
 [![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/theisel/astro-toc/tree/main/demo)
+
+&nbsp;
 
 ## Installation
 
@@ -54,6 +68,8 @@ yarn add astro-toc
 # or
 bun add astro-toc
 ```
+
+&nbsp;
 
 ## Usage
 
@@ -141,6 +157,8 @@ const { title, url, icon, /* depth */ } = Astro.props;
 </style>
 ```
 
+&nbsp;
+
 ## API
 
 ### Component Props (`TocProps<T extends TocItem = TocItem>`)
@@ -156,7 +174,7 @@ The `TOC` component accepts props defined by the generic type `TocProps<T extend
 | depth             | `number`                       | `1`         | `Optional` Minimum heading depth to render (inclusive); controls the starting level.                                                    |
 | maxDepth          | `number`                       | `undefined` | `Optional` Maximum heading depth to render (inclusive)                                                                                  |
 | use               | `(props: T) => any`            | `undefined` | `Optional` Custom Astro component to render each `ToC` item. Receives item (`T`) as props.                                              |
-| HTML&nbsp;Attrs\* | `astroHTML.JSX.HTMLAttributes` | `n/a`       | Standard HTML attributes applied to each list container (`ul`, `ol`, or `menu`), including nested levels. Not applied to `li` elements. |
+| HTML&nbsp;Attrs | `astroHTML.JSX.HTMLAttributes` | `n/a`       | Standard HTML attributes applied to each list container (`ul`, `ol`, or `menu`), including nested levels. Not applied to `li` elements. |
 
 ### TypeScript Types
 
@@ -212,6 +230,8 @@ export type TocProps<T extends TocItem = TocItem> = {
 };
 ```
 
+&nbsp;
+
 ## License
 
-ISC
+Licensed under the ISC License.
