@@ -11,8 +11,10 @@
   },
   "keywords": [
     "astro",
-    "withastro",
     "astro-component",
+    "withastro",
+    "toc",
+    "toc-generator",
     "ui"
   ],
   "files": [
