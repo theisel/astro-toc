@@ -1,0 +1,8 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install astro@latest astro-toc@latest && pnpm start"
+    }
+  ]
+}
