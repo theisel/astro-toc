@@ -36,9 +36,10 @@ A flexible Table of Contents (ToC) generator for [Astro](https://astro.build/). 
 
 ## Demo
 
-Try it out live on:
+Try it out on:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/theisel/astro-toc/tree/main/demo)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/theisel/astro-toc/tree/main/demo) 
+[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/theisel/astro-toc/tree/main/demo)
 
 ## Installation
 
