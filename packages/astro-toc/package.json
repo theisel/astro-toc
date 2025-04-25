@@ -1,7 +1,7 @@
 {
   "name": "astro-toc",
   "description": "A flexible Table of Contents (ToC) generator component for Astro. For blogs, documentation, or any content-rich page which benefits from in-page navigation",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "type": "module",
   "exports": {
     ".": "./lib/index.ts"
